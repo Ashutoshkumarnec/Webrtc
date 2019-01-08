@@ -2,7 +2,7 @@ var express = require("express");
 var app = express();
 var cors = require("cors");
 var bodyParser = require("body-parser");
-var server = require("http").createServer(app);
+var server = require("https").createServer(app);
 var io = require("socket.io")(server);
 app.use(cors());
 app.use(bodyParser.json());
