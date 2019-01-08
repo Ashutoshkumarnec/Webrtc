@@ -11,6 +11,9 @@ app.use(
     extended: false
   })
 );
+app.get("/check", function(req, res) {
+  res.send("hlw");
+});
 app.set("port", process.env.PORT || 5000);
 let socketIdToNames = {};
 server.listen(app.get("port"), function() {
