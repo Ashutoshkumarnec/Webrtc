@@ -14,7 +14,7 @@ app.use(
 app.set("port", process.env.PORT || 5000);
 let socketIdToNames = {};
 server.listen(app.get("port"), function() {
-  console.warn("Socket Server is listening at 7008");
+  console.log("Socket Server is listening at ", app.get("port"));
 });
 io.on("connection", function(socket) {
   console.log("connected", socket.id);
